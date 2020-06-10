@@ -24,3 +24,53 @@ function addRandomFact() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+
+
+
+/** Creates an <li> element containing text. */
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
+}
+
+
+function getcomments() {
+  fetch('/data').then(response => response.json()).then((comments) => {
+    const commentListElement = document.getElementById('history');
+    comments.forEach((comment) => {
+      commentListElement.appendChild(createTaskElement(comment));
+    })
+  });
+}
+
+/** Creates an element that represents a task, including its delete button. */
+function createTaskElement(comment) {
+  const taskElement = document.createElement('li');
+  taskElement.className = 'comment';
+
+  const titleElement = document.createElement('span');
+  titleElement.innerText = comment.title;
+
+  const deleteButtonElement = document.createElement('button');
+  deleteButtonElement.innerText = 'Delete';
+  deleteButtonElement.addEventListener('click', () => {
+    deleteTask(comment);
+
+    // Remove the task from the DOM.
+    taskElement.remove();
+  });
+
+  taskElement.appendChild(titleElement);
+  taskElement.appendChild(deleteButtonElement);
+  return taskElement;
+}
+
+/** Tells the server to delete the task. */
+function deleteTask(comment) {
+  const params = new URLSearchParams();
+  params.append('id', comment.id);
+  fetch('/delete-comment', {method: 'POST', body: params});
+}
+

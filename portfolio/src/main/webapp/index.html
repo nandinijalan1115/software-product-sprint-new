@@ -33,7 +33,7 @@
   </head>
 
 
-  <body>
+  <body  onload="getcomments()">
     <section  style="background-color: #1F8AC0; padding: 15px; font-size: 50px; margin-bottom: 60px;">
           <p style="font-family: 'Overpass'; font-weight: bolder; margin: 0; letter-spacing: -1px; text-align: center;">WELCOME TO MY <span style="color: white;">  PORTFOLIO PAGE</span></p>
     </section>
@@ -86,22 +86,17 @@
       </div>
     </section>
 
-    <!-- <section>
-       
-
+    <section>
        <form action="/data" method="POST">
             <h1>Feel free to leave comments and feedback:</h1>
-            <textarea name="text-input"></textarea>
-            <br/><br/>
-            <input type="submit" />
+            <input type="text" name="text-input" />
+            <br/>
+            <button>Submit</button>
         </form>
-
         <ul id="history"></ul>
-
-
     </section>
 
-    <section>
+    <!--<section>
         <h1>My Codeforces Rating</h1>
         <div id="chart-container"></div>
     </section>-->
