@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html>
+
+
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   
+
   </head>
+
+
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+    <section  style="background-color: #1F8AC0; padding: 15px; font-size: 50px; margin-bottom: 60px;">
+          <p style="font-family: 'Overpass'; font-weight: bolder; margin: 0; letter-spacing: -1px; text-align: center;">WELCOME TO MY <span style="color: white;">  PORTFOLIO PAGE</span></p>
+    </section>
+    <section style="margin-bottom: 60px;">
+        <div  class="container-fluid">
+            <div class="row justify-content-center">
+                <div style="text-align: center;" class="col-4">
+                    <img style="width: 60%; text-align: center; border-radius: 50%;" src="images/portfolio.jpg">
+                </div>
+
+                <div class="col-6" style="font-family:arial; border-color: black; border-width: 5px; font-size: 20px; margin-top: 5px;" id="content">
+                    <p style="font-size: 45px; font-family: 'Overpass';  font-weight: bolder; letter-spacing: -1px;">MY NAME IS <span style="color: #1F8AC0;">NANDINI JALAN</span></p>
+                    <p style="color: #555555; font-size: 30px;">TO BE ENGINEER</p>
+                    <p>BIRTHDAY: 15 APRIL,1999</p>
+                    <p>GENDER: FEMALE</p>
+                    <p>AGE: 21 years</p>
+                    <p>COLLEGE: INDIAN INSTITUTE OF TECHNOLOGY, KHARAGPUR</p>
+                    <div style="font-size: 45px; color: #1F8AC0;">
+                      <a href="mailto:nandini.jalan1115@gmail.com" >
+                        <i style="margin-right: 4px; color: #1F8AC0;" class="fas fa-envelope big-icon"></i>
+                      </a>
+                      <a href="https://www.facebook.com/nandini.jalan.31/" target="_blank" rel="noopener">
+                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-facebook big-icon"></i>
+                      </a>
+                      <a href="https://in.linkedin.com/in/nandini-jalan-955318163" target="_blank" rel="noopener">
+                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-linkedin big-icon"></i>
+                      </a>
+                      <a href="https://github.com/nandinijalan1115" target="_blank" rel="noopener">
+                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-github big-icon"></i>
+                      </a>
+                      <a href="https://www.instagram.com/nandini.jalan1/" >
+                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-instagram big-icon"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section  style="background-color: #eeeeee; padding-left: 100px; padding-right: 100px; padding-bottom: 50px;" class="container-fluid">
+      <p style="font-size: 45px; font-family: 'Overpass'; padding-top: 30px; font-weight: bolder; letter-spacing: -1px; text-align: center;">ABOUT <span style="color: #1F8AC0;">ME</span></p>
+      <p style="text-align: justify; font-size: 20px; padding-bottom:20px; font-family:'Roboto' ">My name is Nandini Jalan. I am a sophomore student at Indian Institute of Technology, Kharagpur.<br>Other than work, I spend my time generally in reading books, watching web series and  talking to people. I am an extrovert at heart. People who do not know me well think that I speak very less which is actually STRANGE!</p>
+      <div class="row">
+        <div class="col-6" style="text-align: right; font-size: 20px;">
+          <button type="button" class="btn" style="background: #1F8AC0; font-size: 20px; border-radius: 50px; color: white; padding-left: 25px; padding-right: 25px;" onclick="addRandomFact()">Click here to know a random fact about me</button>
+        </div>
+        <div class="col-6">
+          <div id="greeting-container" style="font-size: 20px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
+       
+
+       <form action="/data" method="POST">
+            <h1>Feel free to leave comments and feedback:</h1>
+            <textarea name="text-input"></textarea>
+            <br/><br/>
+            <input type="submit" />
+        </form>
+
+        <ul id="history"></ul>
+
+
+    </section>
+
+    <section>
+        <h1>My Codeforces Rating</h1>
+        <div id="chart-container"></div>
+    </section>-->
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
+
+
 </html>
