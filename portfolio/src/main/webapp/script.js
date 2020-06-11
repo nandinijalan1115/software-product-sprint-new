@@ -16,7 +16,7 @@ function drawChart() {
 
     const options = {
       'title': 'Codeforces Ratings',
-      'width':800,
+      'width':1200,
       'height':500
     };
 
@@ -68,6 +68,7 @@ function createTaskElement(comment) {
   titleElement.innerText = comment.title;
 
   const deleteButtonElement = document.createElement('button');
+  deleteButtonElement.className = 'delete-button';
   deleteButtonElement.innerText = 'Delete';
   deleteButtonElement.addEventListener('click', () => {
     deleteTask(comment);
