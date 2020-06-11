@@ -33,7 +33,7 @@
 
   <body  onload="getcomments()">
     <section id="welcome-heading">
-          <p style="font-family: 'Overpass'; font-weight: bolder; margin: 0; letter-spacing: -1px; text-align: center;">WELCOME TO MY <span style="color: white;">  PORTFOLIO PAGE</span></p>
+          <p class="heading">WELCOME TO MY <span style="color: white;">  PORTFOLIO PAGE</span></p>
     </section>
     <section style="margin-bottom: 60px;">
         <div  class="container-fluid">
@@ -42,7 +42,7 @@
                     <img style="width: 60%; text-align: center; border-radius: 50%;" src="images/portfolio.jpg">
                 </div>
 
-                <div class="col-6" style="font-family:arial; border-color: black; border-width: 5px; font-size: 20px; margin-top: 5px;" id="content">
+                <div class="col-6" style="font-family:arial; font-size: 20px; margin-top: 5px;">
                     <p style="font-size: 45px; font-family: 'Overpass';  font-weight: bolder; letter-spacing: -1px;">MY NAME IS <span style="color: #1F8AC0;">NANDINI JALAN</span></p>
                     <p style="color: #555555; font-size: 30px;">TO BE AN ENGINEER</p>
                     <p>BIRTHDAY: 15 APRIL,1999</p>
@@ -51,19 +51,19 @@
                     <p>COLLEGE: INDIAN INSTITUTE OF TECHNOLOGY, KHARAGPUR</p>
                     <div style="font-size: 45px; color: #1F8AC0;">
                       <a href="mailto:nandini.jalan1115@gmail.com" >
-                        <i style="margin-right: 4px; color: #1F8AC0;" class="fas fa-envelope big-icon"></i>
-                      </a>
-                      <a href="https://www.facebook.com/nandini.jalan.31/" target="_blank" rel="noopener">
-                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-facebook big-icon"></i>
+                        <i class="fas fa-envelope big-icon"></i>
                       </a>
                       <a href="https://in.linkedin.com/in/nandini-jalan-955318163" target="_blank" rel="noopener">
-                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-linkedin big-icon"></i>
+                        <i class="fab fa-linkedin big-icon"></i>
                       </a>
                       <a href="https://github.com/nandinijalan1115" target="_blank" rel="noopener">
-                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-github big-icon"></i>
+                        <i class="fab fa-github big-icon"></i>
+                      </a>
+                      <a href="https://www.facebook.com/nandini.jalan.31/" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook big-icon"></i>
                       </a>
                       <a href="https://www.instagram.com/nandini.jalan1/" >
-                        <i style="margin-right: 4px; color: #1F8AC0;" class="fab fa-instagram big-icon"></i>
+                        <i class="fab fa-instagram big-icon"></i>
                       </a>
                     </div>
                 </div>
@@ -71,8 +71,8 @@
         </div>
     </section>
 
-    <section  style="background-color: #eeeeee; padding-left: 100px; padding-right: 100px; padding-bottom: 50px;" class="container-fluid">
-      <p style="font-size: 45px; font-family: 'Overpass'; padding-top: 30px; font-weight: bolder; letter-spacing: -1px; text-align: center;">ABOUT <span style="color: #1F8AC0;">ME</span></p>
+    <section  style="background-color: #eeeeee; padding-left: 100px; padding-top:30px; padding-right: 100px; padding-bottom: 50px;" class="container-fluid">
+      <p class="heading">ABOUT <span style="color: #1F8AC0;">ME</span></p>
       <p style="text-align: justify; font-size: 20px; padding-bottom:20px; font-family:'Roboto' ">My name is Nandini Jalan. I am a sophomore student at Indian Institute of Technology, Kharagpur.<br>Other than work, I spend my time generally in reading books, watching web series and  talking to people. I am an extrovert at heart. People who do not know me well think that I speak very less which is actually STRANGE!</p>
       <div class="row">
         <div class="col-6" style="text-align: right;  border-radius: 50px; font-size: 20px;">
@@ -83,12 +83,12 @@
         </div>
       </div>
     </section>
-    <section style="text-align: center">
-        <p style="font-size: 45px; font-family: 'Overpass'; padding-top: 30px; font-weight: bolder; letter-spacing: -1px; text-align: center;">MY CODEFORCES <span style="color: #1F8AC0;">RATING</span></p>
+    <section style="text-align: center; padding-top: 30px;">
+        <p class="heading">MY CODEFORCES <span style="color: #1F8AC0;">RATING</span></p>
         <div style="display: inline-block" id="chart-container"></div>
     </section>
-    <section style="background-color: #eeeeee; padding-left:100px;" class="container-fluid">
-        <p style="font-size: 45px; font-family: 'Overpass'; padding-top: 30px; font-weight: bolder; letter-spacing: -1px; text-align: center;">FEEDBACK AND <span style="color: #1F8AC0;">COMMENTS</span></p>
+    <section style="background-color: #eeeeee; padding-left:100px; padding-top: 30px;" class="container-fluid">
+        <p class="heading">FEEDBACK AND <span style="color: #1F8AC0;">COMMENTS</span></p>
         <form style="padding-botton:25px;" action="/data" method="POST">
             <h1>Feel free to leave comments and feedback:</h1>
             <input type="text" name="text-input" />
